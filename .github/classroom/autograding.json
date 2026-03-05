@@ -1,64 +1,64 @@
 {
   "tests": [
     {
-      "name": "Compile nilai_01.c",
-      "setup": "",
-      "run": "gcc -Wall -Wextra -std=c11 nilai_01.c -o nilai_01",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "nilai_01 - contoh kasus dasar",
-      "setup": "gcc -Wall -Wextra -std=c11 nilai_01.c -o nilai_01",
-      "run": "./nilai_01",
+      "name": "nilai-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
       "input": "5\n60\n75\n80\n55\n90\n",
       "output": "360\n72.00\n",
       "comparison": "exact",
-      "timeout": 10,
-      "points": 10
+      "timeout": 1,
+      "points": 15
     },
     {
-      "name": "Compile nilai_02.c",
-      "setup": "",
-      "run": "gcc -Wall -Wextra -std=c11 nilai_02.c -o nilai_02",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
+      "name": "nilai-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "4\n0\n100\n50\n50\n",
+      "output": "200\n50.00\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
     },
     {
-      "name": "nilai_02 - contoh kasus dasar",
-      "setup": "gcc -Wall -Wextra -std=c11 nilai_02.c -o nilai_02",
-      "run": "./nilai_02",
+      "name": "nilai-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
       "input": "5\n60\n75\n80\n55\n90\n",
       "output": "360\n72.00\n3\n",
       "comparison": "exact",
-      "timeout": 10,
-      "points": 10
+      "timeout": 1,
+      "points": 15
     },
     {
-      "name": "Compile nilai_03.c",
-      "setup": "",
-      "run": "gcc -Wall -Wextra -std=c11 nilai_03.c -o nilai_03",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
+      "name": "nilai-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "4\n0\n100\n50\n50\n",
+      "output": "200\n50.00\n3\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
     },
     {
-      "name": "nilai_03 - contoh kasus dasar",
-      "setup": "gcc -Wall -Wextra -std=c11 nilai_03.c -o nilai_03",
-      "run": "./nilai_03",
+      "name": "nilai-03-01",
+      "setup": "make compile",
+      "run": "make -s test_03",
       "input": "5\n60\n75\n80\n55\n90\n",
       "output": "360\n72.00\n3\n35\n",
       "comparison": "exact",
-      "timeout": 10,
-      "points": 10
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "nilai-03-02",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "4\n0\n100\n50\n50\n",
+      "output": "200\n50.00\n3\n100\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
     }
   ]
 }

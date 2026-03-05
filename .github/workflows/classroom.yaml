@@ -1,22 +1,16 @@
-name: GitHub Classroom Autograding
+name: GitHub Classroom Workflow
 
-on:
-  push:
-    branches:
-      - main
-      - master
-  workflow_dispatch:
+on: [push]
 
 permissions:
-  contents: read
   checks: write
+  actions: read
+  contents: read
 
 jobs:
-  run-autograding-tests:
+  build:
+    name: Autograding
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run GitHub Classroom Autograding
-        uses: education/autograding@v1
+      - uses: actions/checkout@v2
+      - uses: education/autograding@v1
