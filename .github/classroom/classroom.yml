@@ -1,0 +1,22 @@
+name: T03 - Analisis Nilai Mahasiswa
+
+# Deskripsi singkat assignment yang akan tampil di GitHub Classroom
+assignment:
+  title: "T03 - Analisis Nilai Mahasiswa (Array)"
+  description: >-
+    Implementasikan tiga program C (nilai_01.c, nilai_02.c, nilai_03.c) yang
+    menganalisis nilai tugas mahasiswa menggunakan array, sesuai spesifikasi
+    pada README.
+
+# File yang diharapkan ada dalam repository mahasiswa
+student_files:
+  required:
+    - nilai_01.c
+    - nilai_02.c
+    - nilai_03.c
+
+# Opsi tambahan (opsional) untuk pengajar; dapat disesuaikan/ditambah nanti
+options:
+  language: C
+  visibility: private
+  allow_late_submissions: true
